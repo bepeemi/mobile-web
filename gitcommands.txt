@@ -1,0 +1,7 @@
+git status 
+git add .
+git commit -m "Add" (commitar)
+git push origin nome-branch (Subir)
+git pull origin nome-branch (Atualizar)
+git checkout nome-branch (Navegar entre as branch)
+git checkout -b nome-branch (cria uma nova branch)
