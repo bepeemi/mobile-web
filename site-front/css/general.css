@@ -4,9 +4,30 @@
 }
 
 body{
-    background: white;
+    background: rgb(180, 180, 180);
 }
 
 .container {
     background: white;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+/*Criando o header*/
+header {
+    background: orangered;
+    /*altura*/
+    height: 130px;
+    border-bottom: 3px solid rgb(0, 150, 255);
+    /*flexbox*/
+    display: flex;
+    align-items: center;
+}
+header img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+header h2{
+    color: white ;
+    text-transform: uppercase;
+    font-size: 30px;
 }
