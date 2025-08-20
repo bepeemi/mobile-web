@@ -12,6 +12,10 @@ body{
     max-width: 1064px;
     margin: 0 auto;
 }
+.titleGeneral{
+    padding: 10px 0 0 25px;
+    color: black;
+}
 /*Criando o header*/
 header{
     background: orangered;
@@ -61,6 +65,7 @@ header h2{
    margin: 20px;
    /*Cortar imagem*/
    overflow: hidden;
+   box-shadow: 2px 2px 2px 2px #939393;
 }
 /*Content Home*/
 .content-box{
@@ -74,7 +79,7 @@ header h2{
     max-width: 300px;
     margin: 15px 35px 15px 35px;
     /*sombra*/
-    box-shadow: 3px 3px 3px #939393;
+    box-shadow: 2px 2px 2px 2px #939393;
 }
 .box img{
     border-bottom: 1px solid orangered;
@@ -82,8 +87,8 @@ header h2{
 .box p{
     padding: 10px 10px 10px 10px;
     /*         t    r    b    l  */
-    color: rgb(255, 115, 65);
-    
+    color: rgb(255, 115, 65); 
+    text-align: center; 
 }
 .box a{
     padding: 0 0 10px 10px;
@@ -92,7 +97,21 @@ header h2{
     text-decoration: none;
     /*negrito*/
     font-weight: bold;
+    text-align: center;
 }
 .box a:hover{
     text-decoration: underline;
+}
+.promocao{
+    display: flex;
+    justify-content: center;
+}
+.promocao img{
+    width: 800px;
+    height: 180px;
+    border: 2px solid #4681d6;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px #939393;
 }
