@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background: #dde6ea;
+    background: #999999;
 }
 .container{
     background: white;
@@ -31,7 +31,7 @@ header img{
     margin-right: 15px;
 }
 header h2{
-    color: white ;
+    color: rgb(255, 255, 255) ;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -40,7 +40,7 @@ header h2{
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    background-color: #dde6ea;
+    background-color: #d9d9d9;
 }
 .menu li{
 /*espaçamento*/
@@ -161,4 +161,13 @@ footer{
 footer p{
     color: black;
     font-weight: bold;
+}
+.spaceSobre{
+    margin: 20px 0 20px 0;
+}
+.contentSobre{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
