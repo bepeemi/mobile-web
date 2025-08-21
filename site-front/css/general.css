@@ -151,3 +151,14 @@ header h2{
     color: orangered;
     font-weight: bold;
 }
+footer{
+    background: orangered;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: black;
+    font-weight: bold;
+}
