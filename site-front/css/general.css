@@ -193,6 +193,7 @@ footer p{
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 .containerLista Article{
     margin-top: 8px;
