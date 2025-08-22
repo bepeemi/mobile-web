@@ -181,3 +181,20 @@ footer p{
     justify-content: center;
     align-items: center;
 }
+.spaceSobre{
+    margin:  20px 0 0 20px;
+}
+.containerLista{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.containerLista details{
+    border: 1px solid #939393;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.containerLista Article{
+    margin-top: 8px;
+    color: orangered;
+}
