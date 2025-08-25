@@ -181,8 +181,8 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-.spaceSobre{
-    margin:  20px 0 0 20px;
+.spaceSobre, .spaceContato{
+    margin:  20px 0 20px 0;
 }
 .containerLista{
     margin-left: 30px;
@@ -198,4 +198,12 @@ footer p{
 .containerLista Article{
     margin-top: 8px;
     color: orangered;
+}
+.textContato{
+    margin: 0 0 20px 20px;
+    font-size: 42px;
+}
+.textContato strong{
+    color: orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
