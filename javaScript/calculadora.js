@@ -4,6 +4,7 @@ const num2 = document.getElementById("num2");
 const resultado = document.getElementById("resultado")
 
 // função
-function soma(){
+function soma(event){
+event.preventDefault();
 console.log(num1);
 }
