@@ -6,5 +6,7 @@ const resultado = document.getElementById("resultado")
 // função
 function soma(event){
 event.preventDefault();
-console.log(num1);
+resultado.innerHTML = Number(num1.value) + Number(num2.value);
+num1.value = "";
+num2.value = "";
 }
