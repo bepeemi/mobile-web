@@ -11,13 +11,13 @@
         <form>
         <section class="form-control">
             <label for="nota">Nota:</label>
-            <input type="number" id="nota" />
+            <input type="number" id="nota"  max="10" min="0"/>
         </section>
         <section class="form-control">
-            <button id="verificar-nota" onclick="notaClick()">Verificar Nota</button>
+            <button id="verificar-nota" onclick="notaClick(event)">Verificar Nota</button>
         </section>
         
-        <div id="result"></div>
+        <div id="resultado"></div>
         </form>
     </main>
     <script src="./nota.js"></script>
