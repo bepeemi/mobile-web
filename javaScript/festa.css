@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #483D8B;
+    background: #696969;
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
     width: 100%;
     max-width:450px;
     /*Borda*/
-    border: 2px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(75, 75, 75) ;
     /* Borda arrendondada */
     border-radius: 5px;
     /* Centralizar minha tela*/
@@ -30,42 +30,49 @@ body {
     /*Espaçamento entre os elementos*/
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 2px #353535;
     /*Efeito colateral do navegador*/
-    outline: none;
+    outline: white;
     /*Espaçamento dentro do elemento*/
-    padding: 5px;
+    padding: 10px;
 }
 
 .form-control label {
     /* Espaçamento entre os elementos */
     margin-top: 15px;
-    color: #fff;
+    color: #000000;
     display: block;
 }
 
-#verifica-nota {
+#verifica-idade {
     /* Cor do fundo */
-    background: #191970;
+    background: #d4d0d0;
     /* Borda do Botão */
-    border: 1px solid white;
+    outline: white;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow:2px 2px 2px #353535 ;
+    border-radius: 20px;
     /*Cor de texto */
-    color: #fff;
+    color: #000000;
     /*Espaçamento dentro do elemento */
-    padding: 5px;
+    padding: 10px;
     /* Espaçamento fora do elemento */
     margin-bottom: 10px;
     /* Cursor mãozinha */
     cursor: pointer;
-    transition: all 0.9s;
+    transition: all 0.5s;
 }
 
-#verifica-nota:hover {
-    background-color: rgb(232, 229, 229);
-    color: #191970;
+#verifica-idade:hover {
+    background-color: #696969;
+    color: #ffffff;
 }
 
 #resultado {
-    color: #fff;
+    color: #000000;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
