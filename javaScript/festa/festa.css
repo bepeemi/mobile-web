@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #696969;
+    background: #646464;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
     /*Borda*/
     box-shadow: 2px 2px 2px 2px rgb(75, 75, 75) ;
     /* Borda arrendondada */
-    border-radius: 5px;
+    border-radius: 2px;
     /* Centralizar minha tela*/
     margin: 40px auto;
 }
