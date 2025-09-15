@@ -9,7 +9,7 @@ body {
         }
 
         main {
-            margin-top: 2rem;
+            margin-top: 20px;
         }
 
         h1 {
@@ -17,17 +17,30 @@ body {
             color: #ffffff;
         }
 
-        h2 {
+        h2{
+            font-size: 40px;
+            color: #ffffff;
+        }
+
+        h3 {
             
             color: #ffd900;
+            font-size: 25px;
 
         }
         
         p {
             color: #ffd900;
+            font-size: 20px;
         }
 
-        .contador {
+        .contador-dia {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ff5e00;
+        }
+
+        .contador-hora {
             font-size: 50px;
             font-weight: bold;
             color: #ff5e00;
