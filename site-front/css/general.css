@@ -61,12 +61,11 @@ header h2{
 .banner{
    max-width: 1050px;
    height: 200px;
-   border: 2px solid #4681d6;
-   border-radius: 10px;
+   border-radius: 17px;
    margin: 20px;
    /*Cortar imagem*/
    overflow: hidden;
-   box-shadow: 2px 2px 2px 2px #939393;
+   box-shadow: 2px 2px 2px 2px #e9e7e7;
 }
 /*Content Home*/
 .content-box{
@@ -74,13 +73,13 @@ header h2{
     display: flex;
 }
 .box{
-    border: 2px solid orangered;
-    border-radius: 10px;
+    
+    border-radius: 17px;
     overflow: hidden;
     max-width: 300px;
     margin: 15px 35px 15px 35px;
     /*sombra*/
-    box-shadow: 2px 2px 2px 2px #939393;
+    box-shadow: 2px 2px 2px 2px #e9e7e7;
 }
 .box img{
     border-bottom: 1px solid orangered;
@@ -119,11 +118,10 @@ header h2{
 .promocao img{
     width: 800px;
     height: 180px;
-    border: 2px solid #4681d6;
-    border-radius: 10px;
+    border-radius: 17px;
     margin: 20px;
     overflow: hidden;
-    box-shadow: 2px 2px 2px 2px #939393;
+    box-shadow: 2px 2px 2px 2px #e9e7e7;
 }
 .novidades{
     background: #d9d9d9;
