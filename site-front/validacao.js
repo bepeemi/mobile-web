@@ -1,13 +1,25 @@
-document.getElementById('formEmail').addEventListener('submit', mail);
+const form = document.getElementById("newForm");
 
-function mail(event) {
-  event.preventDefault();
+form.addEventListener("submit", function(event) {
+    // Impede envio automático
+    event.preventDefault();
 
-  var email = document.getElementById('email').value;
+    const email = document.querySelector("#email").value.trim();
 
-  if (email !== "") {
-    alert("Validação concluída");
-  } else {
-    alert("Por favor, insira um email válido");
-  }
-}
+    // Condição de valição 
+    if (email === "") {
+        alert("Por favor, insira um e-mail");
+        return false;
+    }
+
+    // Validação simples: tem @ e .
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Email inválido. Tente novamente");
+        return;
+    }
+
+    alert("Email cadastro com sucesso! ✅");
+
+    // Limpa o campo
+    form.reset(); 
+});
