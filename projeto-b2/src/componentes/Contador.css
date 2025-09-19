@@ -1,0 +1,25 @@
+body{
+    background: grey;
+}
+.container{
+ border: 1px solid rgb(199, 199, 199); 
+ max-width: 500px; 
+ margin: 0 auto; 
+ background: rgb(199, 199, 199);
+ padding: 20px;
+ text-align: center;
+ border-radius: 17px;
+}
+button{
+    background: greenyellow;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 17px ;
+}
+h2{
+    color: black;
+}
+h1{
+    color: greenyellow;
+    text-shadow: 1px 1px 2px black;
+}
