@@ -9,47 +9,48 @@ import "./App.css"
 
 function App() {
 
-const handleClick = () => {
-alert("testes")
-}
+    const handleClick = () => {
+        alert("testes")
+    }
 
-return(
+    return (
 
-<main className="container">
+        <main className="container">
 
-<Header title="Meu Site"/>
+            <Header title="Meu Site" />
 
-<Banner>
- <h1>Bem vindo!</h1>
- <p>Aqui você encontra as melhores ofertas</p>
-</Banner>
+            <Banner>
+                <h1>Bem vindo!</h1>
+                <p>Aqui você encontra as melhores ofertas</p>
+            </Banner>
 
-<ImgCard 
-caption="Uma Imagem Interessante" 
-imagem={img1}
-texto="Piano"
-/>
+            <ImgCard
+                caption="Uma Imagem Interessante"
+                imagem={img1}
+                texto="Piano"
+            />
 
-<ImgCard 
-caption="???????" 
-imagem={img2}
-texto="Afogada"
-/>
+            <ImgCard
+                caption=""
+                imagem={img2}
+                texto="Afogada"
+                link="https://bahamashotelclub.com.br/"
+            />
 
-<ImgCard 
-caption="???????" 
-imagem={img3}
-texto="Farol" 
-/>
+            <ImgCard
+                caption=""
+                imagem={img3}
+                texto="Farol"
+            />
 
-<Button 
-text="Clique aqui" 
-onclick={handleClick}
-/>
+            <Button
+                text="Clique aqui"
+                onclick={handleClick}
+            />
 
-</main>
+        </main>
 
-)
+    )
 }
 
 export default App
