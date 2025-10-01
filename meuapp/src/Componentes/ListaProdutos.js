@@ -36,5 +36,5 @@ const estilos = StyleSheet.create({
   text: {
     fontSize: 16,
 
-  };
+  },
 });
