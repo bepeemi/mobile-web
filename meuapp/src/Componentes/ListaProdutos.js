@@ -1,11 +1,17 @@
 import { View, Text, StyleSheet, FlatList } from "react-native";
 
 export default function ListaProdutos() {
+  const data = ["Pastel de Frango", "Pastel de Carne"];
   return (
     <View style={estilos.container}>
       <FlatList
-        data={["Pastel de Frango c/ Catupiry", "Pastel de Carne Seca", "Pastel de Pizza", "Patel de Vento", "Pastel de Pelo"]}
-        renderItem={({ item }) => <Text>• {item}</Text>}
+        data={data}
+        renderItem={({ item }) => (
+          <View style={estilos.lastItem}>
+            <Text style={estilos.bullet}>• </Text>
+            <Text style={estilos.text}>{item}</Text>
+          </View>
+        )}
       />
     </View>
 
@@ -14,14 +20,21 @@ export default function ListaProdutos() {
 const estilos = StyleSheet.create({
 
   container: {
-    marginTop: 10,
+    marginTop: 40,
     padding: 20,
   },
-
-  textProduct: {
-    textAlign: "center",
-    fontSize: 16,
-    color: "#000000ff",
+  lastItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 8,
+    padding: 12,
   },
+  bullet: {
+    fontSize: 20,
+    marginRight: 8,
+  },
+  text: {
+    fontSize: 16,
 
+  };
 });
