@@ -1,28 +1,32 @@
 import { View, StyleSheet, Text, Button } from "react-native";
 import ListaProdutos from "../Componentes/ListaProdutos";
 
-export default function Prime() {
+export default function Prime(){
     return (
         <>
-
-            <View style={estilos.topo}>
-                <Text style={estilos.tituloHeader}>Delicia Pastéis</Text>
-            </View>
-
-            <View style={estilos.linha} />
-
             <View>
-                <Text style={estilos.lojaContent}>Faça o seu pedido aqui!</Text>
+
+                <View style={estilos.topo}>
+                    <Text style={estilos.tituloHeader}>Delícia Pastéis</Text>
+                </View>
+
+                <View style={estilos.linha} />
+
+                <View>
+                    <Text style={estilos.lojaContent}>Faça o seu pedido aqui!</Text>
+                </View>
+
+                <ListaProdutos />
             </View>
-
-            <ListaProdutos />
-
         </>
     )
 }
 
 const estilos = StyleSheet.create({
 
+    project: {
+        backgroundColor: "#d8d8d8ff",
+    },
     topo: {
         width: "100%",
         height: 150,
@@ -35,6 +39,7 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         paddingTop: 60,
         fontSize: 30,
+        fontWeight: "bold",
     },
 
     linha: {
@@ -48,7 +53,9 @@ const estilos = StyleSheet.create({
         marginTop: 10,
         textAlign: "center",
         fontSize: 20,
+        fontWeight: "bold",
         color: "#ff0000ff",
+
     },
 
 });
