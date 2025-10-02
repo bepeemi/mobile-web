@@ -1,5 +1,6 @@
 import { View, StyleSheet, Text, Button } from "react-native";
 import ListaProdutos from "../Componentes/ListaProdutos";
+import ListaDoces from "../Componentes/ListaDoces";
 
 export default function Prime(){
     return (
@@ -13,10 +14,12 @@ export default function Prime(){
                 <View style={estilos.linha} />
 
                 <View>
-                    <Text style={estilos.lojaContent}>Faça o seu pedido aqui!</Text>
+                    <Text style={estilos.lojaContent}>Pastéis Tradicionais</Text>
                 </View>
 
                 <ListaProdutos />
+                <ListaDoces />
+
             </View>
         </>
     )

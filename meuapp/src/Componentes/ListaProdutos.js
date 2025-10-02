@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, FlatList } from "react-native";
 
 export default function ListaProdutos() {
-  const data = ["Pastel de Frango", "Pastel de Carne", "Pastel de Pizza"];
+  const data = ["Pastel de Frango c/ Catupiry", "Pastel de Carne", "Pastel de Pizza", "Pastel de Camarão c/ Catupiry", "Pastel Caipira"];
   return (
     <View style={estilos.container}>
       <FlatList
@@ -18,16 +18,15 @@ export default function ListaProdutos() {
   )
 }
 const estilos = StyleSheet.create({
-
   container: {
     marginTop: 10,
     padding: 20,
-  
+
   },
   lastItem: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: 10,
     padding: 12,
     backgroundColor: "#FFD700",
     fontSize: 15,
@@ -42,7 +41,6 @@ const estilos = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    borderColor: "white",
     fontWeight: "bold",
   },
 });
