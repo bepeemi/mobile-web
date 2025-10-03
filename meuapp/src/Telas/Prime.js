@@ -1,6 +1,7 @@
 import { View, StyleSheet, Text, Button } from "react-native";
 import ListaProdutos from "../Componentes/ListaProdutos";
 import ListaDoces from "../Componentes/ListaDoces";
+import Lista from "../Componentes/Lista";
 
 export default function Prime(){
     return (
@@ -19,6 +20,7 @@ export default function Prime(){
 
                 <ListaProdutos />
                 <ListaDoces />
+                <Lista />
 
             </View>
         </>
