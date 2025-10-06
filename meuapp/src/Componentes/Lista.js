@@ -11,12 +11,12 @@ export default function Lista() {
         },
         {
             id: 2,
-            nome: 'Piroca',
+            nome: 'Branch',
             idade: 65,
         },
         {
             id: 3,
-            nome: 'Vagina',
+            nome: 'Gina',
             idade: 19,
         },
     ];
