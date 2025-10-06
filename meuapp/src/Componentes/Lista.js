@@ -43,14 +43,17 @@ const estilos = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
         marginBottom: 15,
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#ff0000ff',
     },
     card: {
-        backgroundColor: "#fff",
-        padding: 15,
-        borderRadius: 10,
-        borderColor: "#dedede",
-        borderWidth: 1,
-        marginBottom: 10
-    }
+        
+        backgroundColor: "#FFD700",
+        padding: 12,
+        borderRadius: 16,
+        borderColor: "#000000ff",
+        borderWidth: 2,
+        marginBottom: 10,
+        elevation: 4,
+    },
 })
