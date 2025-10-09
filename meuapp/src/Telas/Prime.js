@@ -9,7 +9,7 @@ export default function Prime(){
             <View>
 
                 <View style={estilos.topo}>
-                    <Text style={estilos.tituloHeader}>Delícia Pastéis</Text>
+                    <Text style={estilos.tituloHeader}>Delícia Pastéis - Nova Branch</Text>
                 </View>
 
                 <View style={estilos.linha} />
