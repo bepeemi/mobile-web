@@ -2,18 +2,20 @@ import { Text, View, StyleSheet } from "react-native";
 
 export default function Header() {
     return (
-        <View style={estilos.header}>
-            <Text style={estilos.textHeader}>Futmisas</Text>
+        <View style={style.header}>
+            <Text style={style.textHeader}>!!!!!!!!</Text>
         </View>
     )
 }
 
-const estilos = StyleSheet.create({
+const style = StyleSheet.create({
     header: {
 
         width: '100%',
         height: 120,
         backgroundColor: '#008fbbff',
+        borderBottomColor: '#002fbbff',
+        borderBottomWidth: 3,
 
     },
     textHeader: {

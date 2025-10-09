@@ -1,5 +1,6 @@
 import { View, Text, ScrollView } from "react-native";
 import Header from "./src/Componentes/Header";
+import Card from "./src/Componentes/Card";
 
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
     <>
       <ScrollView>
         <Header />
+        <Card />
       </ScrollView>
     </>
   );
