@@ -20,10 +20,10 @@ export default function Card() {
 const style = StyleSheet.create({
 
     container: {
-        backgroundColor: '#ddddddff',
+        backgroundColor: '#b2b2b2ff',
         borderRadius: 1.41,
-        shadowColor: '#919191ff',
-        shadowOpacity: 0.2,
+        shadowColor: '#b1b1b1ff',
+        shadowOpacity: 0.5,
         elevation: 2,
         margin: 20,
         padding: 20,
@@ -39,7 +39,7 @@ const style = StyleSheet.create({
     cardContent: {
         fontSize: 14,
         marginBottom: 10,
-    }
+    },
 
 
 });
