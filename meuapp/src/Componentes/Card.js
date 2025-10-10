@@ -1,7 +1,11 @@
+import { useNavigation } from "@react-navigation/native";
 import { Button, StyleSheet, View, Text } from "react-native";
 
 
 export default function Card() {
+    
+    const navigation = useNavigation();
+
     return (
         <View style={style.container}>
             <Text style={style.cardTitle}>Sobre</Text>
@@ -9,7 +13,7 @@ export default function Card() {
             <Button
                 title="Ir para Sobre"
                 onPress={
-                    () => alert("Botão Pressionado")
+                    () => navigation.navigate('Sobre')
                 }
             />
         </View>
