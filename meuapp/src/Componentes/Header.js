@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Header() {
     return (
         <View style={style.header}>
-            <Text style={style.textHeader}>!!!!!!!!</Text>
+            <Text style={style.textHeader}>DiTabela</Text>
         </View>
     )
 }
