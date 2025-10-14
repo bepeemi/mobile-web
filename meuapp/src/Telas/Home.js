@@ -8,18 +8,19 @@ export default function Home() {
 
   return (
     <View>
-      <Card 
-      title="Sobre"
-      content="Saiba mais sobre nós e nossos serviços."
-      textButton="Ir para sobre "
-      onPress={() => navigation.navigate('Sobre')}
+      <Card
+        title="Sobre"
+        content="Saiba mais sobre nós e nossos serviços."
+        textButton="Saiba Mais"
+        onPress={() => navigation.navigate('Sobre')}
       />
-      <Card 
-      title="Faq"
-      content="Saiba mais Faq."
-      textButton="Ir para Faq "
-      onPress={() => navigation.navigate('Faq')}
+      <Card
+        title="Faq"
+        content="Saiba mais Faq."
+        textButton="FAQ "
+        onPress={() => navigation.navigate('Faq')}
       />
     </View>
   )
 }
+

@@ -8,9 +8,11 @@ export default function Card(props) {
         <View style={style.container}>
             <Text style={style.cardTitle}>{props.title}</Text>
             <Text style={style.cardContent}>{props.content}</Text>
-            <Button
+            <Button 
+                
                 title={props.textButton}
                 onPress={props.onPress}
+                
             />
         </View>
     )
@@ -21,8 +23,8 @@ const style = StyleSheet.create({
 
     container: {
         backgroundColor: '#b2b2b2ff',
-        borderRadius: 1.41,
-        shadowColor: '#b1b1b1ff',
+        borderRadius: 16,
+        shadowColor: '#000000ff',
         shadowOpacity: 0.5,
         elevation: 2,
         margin: 20,
@@ -39,6 +41,9 @@ const style = StyleSheet.create({
     cardContent: {
         fontSize: 14,
         marginBottom: 10,
+    },
+    button:{
+        borderRadius: 16,
     },
 
 
