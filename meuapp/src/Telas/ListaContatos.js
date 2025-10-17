@@ -20,7 +20,7 @@ export default function ListaContatos() {
     }
 
     // Use o useEffect para buscar dados
-    
+
     useEffect(() => {
         listaContatos();
     }, [])
@@ -28,6 +28,17 @@ export default function ListaContatos() {
     return (
         <View>
             <Text>Teste</Text>
+            {contatos.length > 0 ? (
+                contatos.map((contato, index) => (
+                    <View key={index}>
+                        <Text>{contato.nome}</Text>
+                        <Text>{contato.telefone}</Text>
+                    </View>
+                ))
+            ) : (
+                <Text></Text>
+            )}
+
         </View>
     )
 }
