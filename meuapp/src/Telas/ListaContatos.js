@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, StyleSheet} from 'react-native'
 import axios from 'axios';
 
 
@@ -26,13 +26,13 @@ export default function ListaContatos() {
     }, [])
 
     return (
-        <View>
-            <Text>Teste</Text>
+        <View style={style.container}>
+            <Text style={style.headFont}>Contatos</Text>
             {contatos.length > 0 ? (
                 contatos.map((contato, index) => (
                     <View key={index}>
-                        <Text>{contato.nome}</Text>
-                        <Text>{contato.telefone}</Text>
+                        <Text style={style.textName}>{contato.nome}</Text>
+                        <Text style={style.textNum}>{contato.telefone}</Text>
                     </View>
                 ))
             ) : (
@@ -42,3 +42,25 @@ export default function ListaContatos() {
         </View>
     )
 }
+
+const style = StyleSheet.create({
+container: {
+    padding: 20,
+    backgroundColor: "#ffffffff",
+},
+headFont: {
+    fontWeight: 'bold',
+    fontSize: 30,
+},
+textName:{
+fontSize: 15,
+fontWeight: 'bold',
+padding: 10,
+},
+textNum:{
+    fontSize: 13,
+    marginLeft: 12,
+    marginBottom: 10,
+},
+
+});
