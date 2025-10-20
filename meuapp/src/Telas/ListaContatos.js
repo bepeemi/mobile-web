@@ -41,7 +41,7 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#d1d1d1ff",
+    backgroundColor: "#ffffffff",
   },
   headFont: {
     fontWeight: 'bold',

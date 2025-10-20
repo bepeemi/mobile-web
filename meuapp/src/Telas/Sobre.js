@@ -38,7 +38,7 @@ export default function Sobre() {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#d1d1d1ff",
+    backgroundColor: "#ffffffff",
     padding: 20,
   },
   header: {
