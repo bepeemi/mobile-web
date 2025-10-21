@@ -12,6 +12,7 @@ export default function Sobre() {
   return (
     <ScrollView style={style.container}>
       <Text style={style.header}>Nossos Serviços</Text>
+      <Text>Salve</Text>
 
       <View style={style.card}>
         <Image source={ImageOne} style={style.image} />
