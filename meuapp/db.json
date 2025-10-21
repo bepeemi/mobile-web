@@ -1,36 +1,31 @@
 {
-    "contatos": [
-        {
-            "id": "1",
-            "nome": "Bruno Pedroso",
-            "telefone": "123456789"
-        },
-        {
-            "id": "2",
-            "nome": "Ana Elisa",
-            "telefone": "987654321"
-        },
-        {
-            "id": "88",
-            "nome": "Luke",
-            "telefone": "9948958859"
-        }
-    ],
-    "faq": [
-        {
-            "id": "1",
-            "pergunta": "O que é JSON Server?",
-            "resposta": "JSON server é uma ferramenta que permite..."
-        },
-        {
-            "id": "4",
-            "pergunta": "Quem foram os Australopitecos?",
-            "resposta": "Foram os primeiros hominideos"
-        },
-        {
-            "id": "8",
-            "pergunta": "Quando ocorreu a segunda guerra mundial?",
-            "resposta": "Em meados de 1939 à 1945"
-        }
-    ]
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "Bruno Pedroso",
+      "telefone": "123456789"
+    },
+    {
+      "id": "2",
+      "nome": "Ana Elisa",
+      "telefone": "987654321"
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que é JSON Server?",
+      "resposta": "JSON server é uma ferramenta que permite..."
+    },
+    {
+      "id": "4",
+      "pergunta": "Quem foram os Australopitecos?",
+      "resposta": "Foram os primeiros hominideos"
+    },
+    {
+      "id": "8",
+      "pergunta": "Quando ocorreu a segunda guerra mundial?",
+      "resposta": "Em meados de 1939 à 1945"
+    }
+  ]
 }
