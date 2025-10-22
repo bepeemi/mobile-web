@@ -22,11 +22,11 @@ export default function Card(props) {
 const style = StyleSheet.create({
 
     container: {
-        backgroundColor: '#b2b2b2ff',
+        backgroundColor: 'white',
         borderRadius: 16,
         shadowColor: '#000000ff',
-        shadowOpacity: 0.5,
-        elevation: 2,
+        shadowOpacity: 10,
+        elevation: 4,
         margin: 20,
         padding: 20,
 
@@ -35,8 +35,6 @@ const style = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10,
-
-
     },
     cardContent: {
         fontSize: 14,

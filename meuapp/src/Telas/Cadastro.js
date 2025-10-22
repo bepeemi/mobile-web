@@ -3,20 +3,30 @@ import { Text, View, StyleSheet, ScrollView, Button, Alert, TextInput } from 're
 import axios from 'axios';
 
 export default function Cadastro() {
-    
+
     const [name, setName] = useState('');
     const [tel, setTel] = useState('');
 
     const sendContact = async () => {
         if (!name || !tel) {
-            Alert.alert("Erro, preencha todos os campos");
-        return;
+            Alert.alert('Erro, preencha todos os campos');
+            return;
+        }
+
+        const newContact = { name, tel };
+        axios.post(`http://10.0.2.2:3000/contatos`, newContact)
+            .then((resposta) => {
+                if (resposta.status === 201) {
+                    Alert.alert ('Contato salvo!')
+                    setName ('');
+                    setTel ('');
+                } else {
+                    Alert.alert('Falha ao salvar contato')
+                }
+
+            })
     }
 
-    const newContact = {name, tel};
-    axios.post(`http://10.0.2.2:3000/contatos`, newContact)
-    }
-    
     return (
 
         <View style={style.container}>
@@ -24,14 +34,14 @@ export default function Cadastro() {
             <TextInput
                 style={style.input}
                 value={name}
-                onChange={setName}
+                onChangeText={setName}
                 placeholder='Digite o nome'
             />
             <Text style={style.label}>Telefone:</Text>
             <TextInput
                 style={style.input}
                 value={tel}
-                onChange={setTel}
+                onChangeText={setTel}
                 placeholder='Digite o número de telefone'
             />
             <Button title="Cadastrar" onPress={sendContact} />
@@ -50,7 +60,7 @@ const style = StyleSheet.create({
     },
     input: {
         borderWidth: 1,
-        corderColor: 'grey',
+        borderColor: '#c6c6c6',
         padding: 10,
         marginBottom: 20,
         borderRadius: 4,

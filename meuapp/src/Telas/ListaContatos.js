@@ -42,8 +42,8 @@ export default function ListaContatos() {
         {contatos.length > 0 ? (
           contatos.map((contato, index) => (
             <View key={index} style={style.card}>
-              <Text style={style.textName}>{contato.nome}</Text>
-              <Text style={style.textNum}>{contato.telefone}</Text>
+              <Text style={style.textName}>{contato.name}</Text>
+              <Text style={style.textNum}>{contato.tel}</Text>
               <Button
                 title="Excluir"
                 onPress={() => deleteContato(contato.id)}
@@ -62,12 +62,12 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#ffffffff",
+    backgroundColor: "#c6c6c6",
   },
   listContainer: {
     paddingBottom: 20,
   },
-  headFont: {
+  title: {
     fontWeight: 'bold',
     fontSize: 28,
     marginBottom: 15,
@@ -75,15 +75,16 @@ const style = StyleSheet.create({
   },
   card: {
     backgroundColor: "#FFFFFF",
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    marginBottom: 15,
-    borderRadius: 20,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.5,
-    shadowRadius: 6,
-    elevation: 6,
+    borderColor: "#c6c6c6",
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    marginBottom: 16,
+    borderRadius: 16,
+    shadowColor: "black",
+    shadowOffset: { width: 5, height: 5 },
+    shadowOpacity: 10,
+    shadowRadius: 4,
+    elevation: 4,
   },
   textName: {
     fontSize: 18,
@@ -100,5 +101,8 @@ const style = StyleSheet.create({
     fontSize: 16,
     color: '#ff0000ff',
     marginTop: 20,
+  },
+  button: {
+    borderRadius: 60,
   },
 });
