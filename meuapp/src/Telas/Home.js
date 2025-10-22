@@ -22,9 +22,15 @@ export default function Home() {
       />
       <Card
         title="Lista Contatos"
-        content="Cadastros"
+        content="Lista de contatos cadastrados"
         textButton="Contatos"
         onPress={() => navigation.navigate('ListaContatos')}
+      />
+      <Card
+        title="Cadastro"
+        content="Cadastro"
+        textButton="Cadastrar"
+        onPress={() => navigation.navigate('Cadastro')}
       />
     </View>
   )
