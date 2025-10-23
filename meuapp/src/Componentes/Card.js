@@ -26,8 +26,8 @@ export default function Card(props) {
 const style = StyleSheet.create({
 
     container: {
-        backgroundColor: 'white',
-        borderRadius: 16,
+        backgroundColor: '#c6c6c6ff',
+        borderRadius: 26,
         shadowColor: '#000000ff',
         shadowOpacity: 10,
         elevation: 4,
@@ -45,9 +45,9 @@ const style = StyleSheet.create({
         marginBottom: 10,
     },
     button: {
-        backgroundColor: '#008fbbff',
+        backgroundColor: '#004d64ff',
         padding: 12,
-        borderRadius: 4,
+        borderRadius: 26,
         alignItems: 'center',
 
     },

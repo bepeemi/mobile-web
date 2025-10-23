@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Header() {
     return (
         <View style={style.header}>
-            <Text style={style.textHeader}>DiTabela</Text>
+            <Text style={style.textHeader}>IKIGAI</Text>
         </View>
     )
 }
@@ -13,8 +13,8 @@ const style = StyleSheet.create({
 
         width: '100%',
         height: 120,
-        backgroundColor: '#008fbbff',
-        borderBottomColor: '#002fbbff',
+        backgroundColor: '#004d64ff',
+        borderBottomColor: '#bbff00ff',
         borderBottomWidth: 3,
 
     },

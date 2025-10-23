@@ -55,6 +55,7 @@ export default function Cadastro() {
 const style = StyleSheet.create({
     container: {
         padding: 20,
+        backgroundColor: '#e9e9e9ff',
     },
     label: {
         fontSize: 18,
@@ -63,25 +64,32 @@ const style = StyleSheet.create({
     },
     input: {
         borderWidth: 1,
-        borderColor: '#c6c6c6',
+        borderColor: '#c6c6c6ff',
         padding: 10,
         marginBottom: 20,
-        borderRadius: 4,
-        backgroundColor: 'white',
+        borderRadius: 26,
+        backgroundColor: '#ffffffff',
         elevation: 6,
         shadowOpacity: 2,
-        shadowColor: 'black',
+        shadowColor: '#000000',
     },
     button: {
-        backgroundColor: '#008fbbff',
-        padding: 12,
-        borderRadius: 4,
+        backgroundColor: '#004d64ff',
+        maxWidth: '50%',
+        width: 125,
+        maxHeight: 60,
+        marginLeft: 245,
+        padding: 10,
+        borderRadius: 26,
         alignItems: 'center',
+        elevation: 6,
+        shadowOpacity: 2,
+        shadowColor: '#000000',
 
     },
     buttonTitle: {
         color: '#bbff00ff',
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
     }
 });
