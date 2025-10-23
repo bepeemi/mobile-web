@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, StyleSheet, ScrollView, Button, Alert, TextInput } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, Button, Alert, TextInput, TouchableOpacity } from 'react-native';
 import axios from 'axios';
 
 export default function Cadastro() {
@@ -17,9 +17,9 @@ export default function Cadastro() {
         axios.post(`http://10.0.2.2:3000/contatos`, newContact)
             .then((resposta) => {
                 if (resposta.status === 201) {
-                    Alert.alert ('Contato salvo!')
-                    setName ('');
-                    setTel ('');
+                    Alert.alert('Contato salvo!')
+                    setName('');
+                    setTel('');
                 } else {
                     Alert.alert('Falha ao salvar contato')
                 }
@@ -44,7 +44,10 @@ export default function Cadastro() {
                 onChangeText={setTel}
                 placeholder='Digite o número de telefone'
             />
-            <Button title="Cadastrar" onPress={sendContact} />
+            {/* <Button title="Cadastrar" onPress={sendContact} /> */}
+            <TouchableOpacity onPress={sendContact} style={style.button}>
+                <Text style={style.buttonTitle}>Cadastrar</Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -69,4 +72,16 @@ const style = StyleSheet.create({
         shadowOpacity: 2,
         shadowColor: 'black',
     },
+    button: {
+        backgroundColor: '#008fbbff',
+        padding: 12,
+        borderRadius: 4,
+        alignItems: 'center',
+
+    },
+    buttonTitle: {
+        color: '#bbff00ff',
+        fontSize: 20,
+        fontWeight: 'bold',
+    }
 });

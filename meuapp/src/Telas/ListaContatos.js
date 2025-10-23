@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, StyleSheet, ScrollView, Button, Alert } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, Button, Alert, TouchableOpacity } from 'react-native';
 import axios from 'axios';
 
 export default function ListaContatos() {
@@ -44,10 +44,17 @@ export default function ListaContatos() {
             <View key={index} style={style.card}>
               <Text style={style.textName}>{contato.name}</Text>
               <Text style={style.textNum}>{contato.tel}</Text>
-              <Button
-                title="Excluir"
-                onPress={() => deleteContato(contato.id)}
-              />
+
+              <TouchableOpacity
+
+                style={style.button}
+                title='Excluir'
+                onPress={() => deleteContato(contato.id)}>
+
+                <Text style={style.buttonTitle}>X</Text>
+
+              </TouchableOpacity>
+
             </View>
           ))
         ) : (
@@ -79,7 +86,7 @@ const style = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
     marginBottom: 16,
-    borderRadius: 16,
+    borderRadius: 26,
     shadowColor: "black",
     shadowOffset: { width: 5, height: 5 },
     shadowOpacity: 10,
@@ -103,6 +110,22 @@ const style = StyleSheet.create({
     marginTop: 20,
   },
   button: {
-    borderRadius: 60,
-  },
+        backgroundColor: '#ff0000ff',
+        borderWidth: 1,
+        borderColor: '#000000ff',
+        elevation: 4,
+        shadowColor: '#ff0000ff',
+        maxWidth: '20%',
+        width: 360,
+        marginLeft: 280,
+        padding: 12,
+        borderRadius: 360,
+        alignItems: 'center',
+
+    },
+    buttonTitle: {
+        color: '#000000',
+        fontSize: 15,
+        fontWeight: 'bold',
+    }
 });

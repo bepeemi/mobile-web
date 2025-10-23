@@ -1,19 +1,23 @@
 import React from 'react';
-import { Button, StyleSheet, View, Text } from "react-native";
+import { Button, StyleSheet, View, Text, TouchableOpacity } from "react-native";
 
 
 export default function Card(props) {
-    
+
     return (
         <View style={style.container}>
             <Text style={style.cardTitle}>{props.title}</Text>
             <Text style={style.cardContent}>{props.content}</Text>
-            <Button 
+
+            <TouchableOpacity
                 
+                style={style.button}
                 title={props.textButton}
-                onPress={props.onPress}
-                
-            />
+                onPress={props.onPress}>
+            
+            <Text style={style.buttonTitle}>Cadastrar</Text>
+
+            </TouchableOpacity>
         </View>
     )
 }
@@ -40,9 +44,16 @@ const style = StyleSheet.create({
         fontSize: 14,
         marginBottom: 10,
     },
-    button:{
-        borderRadius: 16,
+    button: {
+        backgroundColor: '#008fbbff',
+        padding: 12,
+        borderRadius: 4,
+        alignItems: 'center',
+
     },
-
-
+    buttonTitle: {
+        color: '#bbff00ff',
+        fontSize: 16,
+        fontWeight: 'bold',
+    }
 });

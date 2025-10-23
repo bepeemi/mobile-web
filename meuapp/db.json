@@ -1,11 +1,6 @@
 {
   "contatos": [
     {
-      "id": "1",
-      "name": "Bruno Pedroso",
-      "tel": "123456789"
-    },
-    {
       "id": "2",
       "name": "Ana Elisa",
       "tel": "987654321"
