@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Header() {
     return (
         <View style={style.header}>
-            <Text style={style.textHeader}>IKIGAI</Text>
+            <Text style={style.textHeader}>Ikigai Sushi</Text>
         </View>
     )
 }
@@ -13,16 +13,16 @@ const style = StyleSheet.create({
 
         width: '100%',
         height: 120,
-        backgroundColor: '#004d64ff',
-        borderBottomColor: '#bbff00ff',
-        borderBottomWidth: 3,
+        backgroundColor: '#ff5e00ff',
+        borderBottomColor: '#7bff00ff',
+        borderBottomWidth: 4,
 
     },
     textHeader: {
 
         width: '100%',
         textAlign: 'center',
-        color: '#bbff00ff',
+        color: '#7bff00ff',
         fontWeight: 'bold',
         fontSize: 25,
         paddingTop: 40,

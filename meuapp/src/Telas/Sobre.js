@@ -1,27 +1,26 @@
 import { Text, View, StyleSheet, Image, ScrollView } from "react-native";
-import ImageOne from "../../assets/img1.jpg";
-import ImageTwo from "../../assets/img2.jpg";
+import ImageOne from "../../assets/img1.jpeg";
+import ImageTwo from "../../assets/img2.jpeg";
 
-export default function Sobre() {
+export default function Sobre(props) {
   const info = {
-    nomeApp: "DiTabela",
+    nomeApp: "Ikigai",
     versao: "1.0.0",
     desenvolvedor: "Nobru",
   };
 
   return (
     <ScrollView style={style.container}>
-      <Text style={style.header}>Nossos Serviços</Text>
-      <Text>Salve</Text>
+      <Text style={style.header}>Saiba mais sobre nós:</Text>
 
       <View style={style.card}>
         <Image source={ImageOne} style={style.image} />
-        <Text style={style.cardTitle}>Suporte Técnico Acertivo</Text>
+        <Text style={style.cardTitle}>Nosso Cardápio</Text>
       </View>
 
       <View style={style.card}>
         <Image source={ImageTwo} style={style.image} />
-        <Text style={style.cardTitle}>Detalhes de Jogabilidade</Text>
+        <Text style={style.cardTitle}>Nossos Especiais</Text>
       </View>
 
       <View style={style.aboutSection}>
@@ -39,7 +38,7 @@ export default function Sobre() {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ffffffff",
+    backgroundColor: "#c6c6c6",
     padding: 20,
   },
   header: {
@@ -47,17 +46,16 @@ const style = StyleSheet.create({
     fontWeight: "bold",
     color: "#000000ff",
     marginBottom: 15,
+    textAlign: 'center',
   },
   card: {
     backgroundColor: "#ffffffff",
-    borderRadius: 20,
-    paddingVertical: 20,
+    borderRadius: 26,
+    paddingVertical: 30,
     alignItems: "center",
     marginBottom: 20,
     shadowColor: "#000000ff",
-    shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.5,
-    shadowRadius: 6,
+    shadowOpacity: 5,
     elevation: 6,
   },
   image: {

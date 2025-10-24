@@ -2,30 +2,40 @@
   "contatos": [
     {
       "id": "2",
-      "name": "Ana Elisa",
+      "name": "Marina",
       "tel": "987654321"
     },
     {
       "id": "3944",
-      "name": "Louis",
+      "name": "José",
       "tel": "66666666"
+    },
+    {
+      "id": "e03e",
+      "name": "Paulo Lontra",
+      "tel": "5656565656"
+    },
+    {
+      "id": "b76b",
+      "name": "Vincent VanCoco",
+      "tel": "9898989898"
     }
   ],
   "faq": [
     {
       "id": "1",
-      "pergunta": "O que é JSON Server?",
-      "resposta": "JSON server é uma ferramenta que permite..."
+      "pergunta": "Qual o tempo de espera?",
+      "resposta": "O tempo pode variar de 40 minutos a 1 hora até o final do preparo, depende do seu combo escolhido!"
     },
     {
       "id": "4",
-      "pergunta": "Quem foram os Australopitecos?",
-      "resposta": "Foram os primeiros hominideos"
+      "pergunta": "Os peixes são frescos?",
+      "resposta": "Sim, os peixes utilizados são completamente frescos e adquiridos em uma Pescaria de renome!"
     },
     {
       "id": "8",
-      "pergunta": "Quando ocorreu a segunda guerra mundial?",
-      "resposta": "Em meados de 1939 à 1945"
+      "pergunta": "Aceitam pix?",
+      "resposta": "Aceitamos as demais formas de pagamento: Pix, Dinheiro em espécie, Cartões de Débito e Crédito"
     }
   ]
 }

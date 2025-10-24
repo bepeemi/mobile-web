@@ -15,7 +15,7 @@ export default function Card(props) {
                 title={props.textButton}
                 onPress={props.onPress}>
             
-            <Text style={style.buttonTitle}>Cadastrar</Text>
+            <Text style={style.buttonTitle}>Clique aqui</Text>
 
             </TouchableOpacity>
         </View>
