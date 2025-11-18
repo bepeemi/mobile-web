@@ -1,0 +1,43 @@
+body {
+    background: url('../img/bg-site.jpg') no-repeat;
+    background-size: cover;    
+}
+
+#container {
+    background: #fff;
+    /* Largura da tela*/
+    max-width: 400px;
+    /* Centralizar */
+    margin: 0 auto;
+    border-radius: 15px;
+    /* Espaçamento dentro do elemento */
+    padding: 15px;
+    text-align: center;
+}
+
+#container h1 {
+    color: blueviolet;
+    /* Espaçamento dentro do elemento */
+    padding: 15px;
+    /* Tamanho de texto */
+    font-size: 30px;
+}
+
+#tarefa {
+    border: 2px solid #d3d3d3;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    color: red;
+}
+
+#tarefa::placeholder {
+    color: rgb(199, 197, 197);
+}
+
+.btnAdicionar {
+    background: rgb(139, 198, 225);
+    padding: 7px;
+    border: 0;
+    border-radius: 8px;
+}

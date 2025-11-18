@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+body {
+    background: #c4c4c4;
+}
+.container{
+    background: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.container h1{
+    padding: 10px;
+    color: #ff4500;
+    text-align: center;
+}
+.links a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(0, 140, 255);
+}
+.links a:hover{
+    text-decoration: underline;
+    color: rgb(0, 50, 92);
+}
