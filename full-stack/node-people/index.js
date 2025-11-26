@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // mock
 const nomes = [
@@ -12,11 +12,17 @@ const nomes = [
 ];
 
 app.get ("/teste", (req, res) => {
-res.send("A Api nodePeople está online");
+ res.send("A Api nodePeople está online kkk");
 });
+
 app.get("/listaNomes", (req, res) => {
     res.send(nomes);
 });
+
+app.get ("/new", (req, res) => {
+res.send(nomes);
+});
+
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
