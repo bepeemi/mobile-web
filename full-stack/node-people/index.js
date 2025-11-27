@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const port = 4000;
-
+//indicar para express ler body com json
+app.use(express.json());
 // mock
 const nomes = [
   { id: 1, nome: "Fernanda", idade: "18" },
