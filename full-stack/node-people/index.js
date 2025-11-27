@@ -13,29 +13,34 @@ const nomes = [
 
 // Criando funções auxiliares 
 // retornar o objeto por id
-function buscarNomePorId(id){
+function buscarNomePorId(id) {
   return nomes.filter((nome) => nome.id == id)
 }
 //Pegar a posi
-function buscarIdNomes(id){
-return nomes.findIndex((nome) => nome.id == id)
+function buscarIdNomes(id) {
+  return nomes.findIndex((nome) => nome.id == id)
 }
 
 app.get('/', (req, res) => {
-    res.send('Bem vindo');
+  res.send('Bem vindo');
 });
 
-app.get ("/teste", (req, res) => {
- res.send("A Api nodePeople está online kkk");
+app.get("/teste", (req, res) => {
+  res.send("A Api nodePeople está online kkk");
 });
 
 app.get("/listaNomes", (req, res) => {
-    res.send(nomes);
+  res.send(nomes);
 });
 
-app.get ("/listaNomes/:id", (req, res) => {
-let index = req.params.id;
-res.json(buscarNomePorId(index))
+app.get("/listaNomes/:id", (req, res) => {
+  let index = req.params.id;
+  res.json(buscarNomePorId(index))
+});
+
+app.post("/listaNomes", (req, res) => {
+  nomes.push(req.body);
+  res.status(201).send('Nomes cadastrados com sucesso!');
 });
 
 //Criando rota de exclusão
@@ -46,7 +51,6 @@ app.delete("/listaNomes/:id", (req, res) => {
 
 });
 
-
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
